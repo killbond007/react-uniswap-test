@@ -1,0 +1,27 @@
+{
+	"repositoryName": "rte-origami-gpio-front",
+	"repositoryHost": "BITBUCKET",
+	"monorepo": "NO_MONOREPO",
+	"frontOrBack": "FRONTEND",
+	"styleStack": [
+		"XSTYLED",
+		"STYLED_COMPONENTS"
+	],
+	"withTypescript": false,
+	"projectType": "APP_REACT",
+	"srcDir": "src",
+	"testRootDir": "src",
+	"isLibrary": false,
+	"isApp": true,
+	"isCli": false,
+	"withCypress": true,
+	"withReact": true,
+	"withWebpack": true,
+	"withBabel": true,
+	"withStyledComponents": true,
+	"withXstyled": true,
+	"withXstyledTheme": true,
+	"withSASSLoaders": false,
+	"withCSSLoaders": false,
+	"extensions": ".js,.jsx"
+}

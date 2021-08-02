@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`urlUtils getGeoJsonFromBounds should throw an error if the key does not exist in env variables 1`] = `
+Object {
+  "coordinates": Array [
+    Array [
+      Array [
+        undefined,
+        undefined,
+      ],
+      Array [
+        undefined,
+        undefined,
+      ],
+      Array [
+        undefined,
+        undefined,
+      ],
+      Array [
+        undefined,
+        undefined,
+      ],
+      Array [
+        undefined,
+        undefined,
+      ],
+    ],
+  ],
+  "type": "Polygon",
+}
+`;

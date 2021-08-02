@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`notificationServices resolveNotificationsService matches snapshot 1`] = `
+Object {
+  "0": Object {
+    "action": "create",
+    "createdAt": "2021-07-16T13:10:01.169Z",
+    "type": "document",
+    "user": Object {
+      "firstName": "firstName",
+      "lastName": "lastName",
+    },
+  },
+  "1": Object {
+    "action": "update",
+    "createdAt": "2021-06-15T08:14:50.737Z",
+    "type": "document",
+    "user": Object {
+      "firstName": "firstName123",
+      "lastName": "lastName456",
+    },
+  },
+  "data": undefined,
+}
+`;

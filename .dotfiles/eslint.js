@@ -1,0 +1,75 @@
+module.exports = {
+  parserOptions: {
+    ecmaVersion: 2018,
+  },
+	settings: {
+		react: {
+			version: 'detect',
+		},
+	},
+  plugins: [
+		'sort-imports-es6-autofix',
+		'jsdoc',
+  ],
+	extends: ['plugin:react/recommended', 'react-app', 'plugin:prettier/recommended', 'prettier/react'],
+	rules: {
+		'import/no-named-as-default': 0,
+		'import/no-named-as-default-member': 0,
+		'react-hooks/exhaustive-deps': [
+			'warn',
+			{
+				additionalHooks: '(usePostMountEffect)',
+			},
+		],
+		'no-console': [1, { allow: ['error', 'info'] }],
+		'import/order': 'error',
+		'sort-imports-es6-autofix/sort-imports-es6': 'error',
+		'jsdoc/check-alignment': 1,
+		'jsdoc/check-indentation': 1,
+		'jsdoc/check-param-names': 1,
+		'jsdoc/check-tag-names': 1,
+		'jsdoc/check-types': 1,
+		'jsdoc/check-values': 1,
+		'jsdoc/empty-tags': 1,
+		'jsdoc/implements-on-classes': 1,
+		'jsdoc/match-description': 1,
+		'jsdoc/newline-after-description': 0,
+		'jsdoc/no-bad-blocks': 1,
+		'jsdoc/no-defaults': 1,
+		'jsdoc/no-undefined-types': 1,
+		'jsdoc/require-description': 1,
+		'jsdoc/require-description-complete-sentence': 1,
+		'jsdoc/require-example': 0,
+		'jsdoc/require-file-overview': 0,
+		'jsdoc/require-hyphen-before-param-description': [1, 'never'],
+		'jsdoc/require-jsdoc': 0,
+		'jsdoc/require-param': 1,
+		'jsdoc/require-param-description': 1,
+		'jsdoc/require-param-name': 1,
+		'jsdoc/require-param-type': 1,
+		'jsdoc/require-returns': 1,
+		'jsdoc/require-returns-check': 1,
+		'jsdoc/require-returns-description': 1,
+		'jsdoc/require-returns-type': 1,
+		'jsdoc/valid-types': 1,
+	},
+  overrides: [
+    {
+      files: ['**/modules/*/components/*Page.js', '**/modules/*/components/*Page.jsx'],
+      rules: {
+				'react/prop-types': [0, { skipUndeclared: true, }],
+      },
+    },
+    {
+      files: ['cypress/**/*.specs.js'],
+      globals: {
+        context: true,
+        before: true,
+        cy: true,
+        Cypress: true,
+        expect: true,
+        assert: true,
+      },
+    },
+  ],
+}

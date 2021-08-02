@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleHeader matches snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  border: 1px solid rgb(235,237,240);
+  padding: 48px 12px !important;
+  box-shadow: medium !important;
+  z-index: banner;
+}
+
+.c0 .ant-page-header-content {
+  padding: 0;
+}
+
+.c0 .ant-page-header-heading-left {
+  margin: 0;
+}
+
+.c1 {
+  margin: 0 !important;
+}
+
+.c1.ant-typography {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.14rem;
+  line-height: 1.71rem;
+}
+
+<div
+    class="ant-page-header c0 ant-page-header-ghost"
+  >
+    <div
+      class="ant-page-header-heading"
+    >
+      <div
+        class="ant-page-header-heading-left"
+      >
+        <span
+          class="ant-page-header-heading-title"
+        >
+          <h1
+            class="ant-typography c1"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
